@@ -7,6 +7,7 @@ OpenCV 라이브러리 함수를 이용하여 입력 이미지('OMG.jpg')에 대
 
 ### 1. Cartoonization
 이 기술은 입력 이미지를 회색조로 변환하고, 가우시안 블러를 적용하고, 적응 임계값을 사용하여 가장자리 감지를 수행하고, 가장자리를 양면 필터링된 컬러 이미지와 결합하여 만화 같은 효과를 생성합니다. 결과 이미지는 '만화'에 저장됩니다.
+
 <img width="638" alt="new2" src="https://user-images.githubusercontent.com/113033780/227871857-0c951959-03a1-41ef-adf6-40327f5ab043.png">
 
 ### 2. Color Quantization Filter
@@ -22,3 +23,4 @@ OpenCV 라이브러리 함수를 이용하여 입력 이미지('OMG.jpg')에 대
 <img width="957" alt="new5" src="https://user-images.githubusercontent.com/113033780/227872019-67fddae4-29cb-46e8-b1c3-7b7a4a6fc93b.png">
 
 결과 이미지는 'cv2.imshow' 함수를 사용하여 표시됩니다. 위에서 설명한 네 가지 이미지 처리 기술의 출력 이미지와 함께 원본 이미지가 표시됩니다. 
+chatgpt code에서는 엣지를 검출하고 가우시안 블러를 적용한 뒤에 컬러를 입혔습니다. 이와 달리 2번에서는 이미지에 사용되는 색상 수를 줄여서 만화 같은 효과를 내려고 했고 3번의 경우에는 연필 스케치 효과를 넣을려고 했습니다. 4번의 경우 여러가지 filter를 적용했습니다.
